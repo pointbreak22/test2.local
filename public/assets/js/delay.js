@@ -1,5 +1,5 @@
 
-function randomDelay(time=Math.random() * 700 + 200) {
+function randomDelay(time=Math.random() * 200 + 100) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
