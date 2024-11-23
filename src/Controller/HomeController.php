@@ -32,7 +32,10 @@ class HomeController extends Controller
             ],
         ];
 
-        $url = 'http://localhost:3000/api/arbiter/all-cases?' . http_build_query($filter1);
+        $filter2 = ['caseNumber'=>"А54-10898/2024"];
+
+       // $url = 'http://localhost:3000/api/arbitr/all?' . http_build_query($filter1);
+        $url = 'http://localhost:3000/api/arbitr/case?' . http_build_query($filter2);
         $ch = curl_init($url);
 
         // Настраиваем параметры запроса

@@ -1,7 +1,4 @@
-
-
-
-async function closePOPUPWindow(page){
+async function closePOPUPWindow(page) {
     await page.evaluate(async () => {
         const closeButton = document.querySelector('.js-promo_notification-popup-close');
 
